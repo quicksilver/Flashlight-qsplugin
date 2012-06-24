@@ -17,7 +17,6 @@
 		E18F1844069CBA3D00C1A2F7 /* Flashlight.nib in Resources */ = {isa = PBXBuildFile; fileRef = E18F1842069CBA3D00C1A2F7 /* Flashlight.nib */; };
 		E18F1935069CBE5500C1A2F7 /* QSFerdinandView.h in Resources */ = {isa = PBXBuildFile; fileRef = E18F1933069CBE5500C1A2F7 /* QSFerdinandView.h */; };
 		E18F1936069CBE5500C1A2F7 /* QSFerdinandView.m in Sources */ = {isa = PBXBuildFile; fileRef = E18F1934069CBE5500C1A2F7 /* QSFerdinandView.m */; };
-		E18F19E5069CCCF200C1A2F7 /* BarGradientG.png in Resources */ = {isa = PBXBuildFile; fileRef = E18F19E4069CCCF200C1A2F7 /* BarGradientG.png */; };
 		E1EAB046068128A200774DFF /* QSFlashlightInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB045068128A200774DFF /* QSFlashlightInterface.m */; };
 /* End PBXBuildFile section */
 
@@ -30,11 +29,10 @@
 		14DE8A9810D09EA100851A6F /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
 		14DE8A9910D09EA100851A6F /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
 		14DE8A9A10D09EA100851A6F /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		32DBCF980370C29C00C91783 /* QSFlashlightInterface_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSFlashlightInterface_Prefix.pch; sourceTree = "<group>"; };
-		7F095FC90830712F009C3703 /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = QSFrameworks; };
-		7F095FCA0830712F009C3703 /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSEffects.framework; sourceTree = QSFrameworks; };
-		7F095FCB0830712F009C3703 /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSFoundation.framework; sourceTree = QSFrameworks; };
-		7F095FCC0830712F009C3703 /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = QSFrameworks; };
+		7F095FC90830712F009C3703 /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F095FCA0830712F009C3703 /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F095FCB0830712F009C3703 /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F095FCC0830712F009C3703 /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* Flashlight Interface.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flashlight Interface.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -44,7 +42,6 @@
 		E18F1842069CBA3D00C1A2F7 /* Flashlight.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = Flashlight.nib; sourceTree = "<group>"; };
 		E18F1933069CBE5500C1A2F7 /* QSFerdinandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSFerdinandView.h; sourceTree = "<group>"; };
 		E18F1934069CBE5500C1A2F7 /* QSFerdinandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSFerdinandView.m; sourceTree = "<group>"; };
-		E18F19E4069CCCF200C1A2F7 /* BarGradientG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BarGradientG.png; sourceTree = "<group>"; };
 		E1EAB045068128A200774DFF /* QSFlashlightInterface.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSFlashlightInterface.m; sourceTree = "<group>"; };
 		E1EAB047068128A800774DFF /* QSFlashlightInterface.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QSFlashlightInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,8 +67,6 @@
 			children = (
 				14DE8A9010D09E8800851A6F /* Configuration */,
 				32DBCF9E0370C38000C91783 /* Classes */,
-				32DBCF9F0370C38200C91783 /* Other Sources */,
-				E1127F960695F44F008AE6A3 /* Templates */,
 				0259C582FE90428111CA0C5A /* Resources */,
 				1ED78706FE9D4A0611CA0C5A /* Products */,
 				2E58F364FFB232C311CA0CBA /* Frameworks */,
@@ -83,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				E18F1841069CBA3D00C1A2F7 /* BarGradient.png */,
-				E18F19E4069CCCF200C1A2F7 /* BarGradientG.png */,
 				E18F1842069CBA3D00C1A2F7 /* Flashlight.nib */,
 				E18F183E069CBA2200C1A2F7 /* Localizable.strings */,
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
@@ -133,24 +127,9 @@
 				E18F1933069CBE5500C1A2F7 /* QSFerdinandView.h */,
 				E18F1934069CBE5500C1A2F7 /* QSFerdinandView.m */,
 				E1EAB045068128A200774DFF /* QSFlashlightInterface.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		32DBCF9F0370C38200C91783 /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				32DBCF980370C29C00C91783 /* QSFlashlightInterface_Prefix.pch */,
 				E1EAB047068128A800774DFF /* QSFlashlightInterface.h */,
 			);
-			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		E1127F960695F44F008AE6A3 /* Templates */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Templates;
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +161,11 @@
 			isa = PBXProject;
 			buildConfigurationList = 7F07B006085E433200E2AFC4 /* Build configuration list for PBXProject "QSFlashlightInterface" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 0259C574FE90428111CA0C5A /* QSFlashlightInterface */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,7 +184,6 @@
 				E18F1843069CBA3D00C1A2F7 /* BarGradient.png in Resources */,
 				E18F1844069CBA3D00C1A2F7 /* Flashlight.nib in Resources */,
 				E18F1935069CBE5500C1A2F7 /* QSFerdinandView.h in Resources */,
-				E18F19E5069CCCF200C1A2F7 /* BarGradientG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +243,6 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-bundle";
 				PRODUCT_NAME = "Flashlight Interface";
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -272,6 +253,22 @@
 			};
 			name = Release;
 		};
+		CD6BF9051597A40A0087F1DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14DE8A9410D09EA100851A6F /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		CD6BF9061597A40A0087F1DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14DE8A9610D09EA100851A6F /* QSPlugIn_Debug.xcconfig */;
+			buildSettings = {
+				OTHER_LDFLAGS = "-bundle";
+				PRODUCT_NAME = "Flashlight Interface";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -279,6 +276,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F07B004085E433200E2AFC4 /* Release */,
+				CD6BF9061597A40A0087F1DF /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -287,6 +285,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F07B008085E433200E2AFC4 /* Release */,
+				CD6BF9051597A40A0087F1DF /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
