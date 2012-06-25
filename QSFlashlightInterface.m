@@ -7,10 +7,7 @@
 //
 
 #import "QSFlashlightInterface.h"
-#import <QSEffects/QSEffects.h>
-#import <QSInterface/QSInterface.h>
 
-#import <QSEffects/QSWindow.h>
 @implementation QSFlashlightInterface
 
 - (id)init {
@@ -29,53 +26,37 @@
     [menuButton setImage:[[NSBundle mainBundle] imageNamed:@"QuicksilverMenuLight"]];
 	[menuButton setAlternateImage:[[NSBundle mainBundle] imageNamed:@"QuicksilverMenuPressed"]];
 
+	QSWindow *window = (QSWindow *)[self window];
+    
+	[window setShowEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSVExpandEffect",@"transformFn",@"show",@"type",[NSNumber numberWithDouble:0.15],@"duration",nil]];
+	//	[window setHideEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSShrinkEffect",@"transformFn",@"hide",@"type",[NSNumber numberWithDouble:.25],@"duration",nil]];
 	
-	[[self window] setShowEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSVExpandEffect",@"transformFn",@"show",@"type",[NSNumber numberWithFloat:0.15],@"duration",nil]];
-	//	[window setHideEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSShrinkEffect",@"transformFn",@"hide",@"type",[NSNumber numberWithFloat:.25],@"duration",nil]];
-	
-	[[self window] setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSExplodeEffect",@"transformFn",@"hide",@"type",[NSNumber numberWithFloat:0.2],@"duration",nil]
+	[window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSExplodeEffect",@"transformFn",@"hide",@"type",[NSNumber numberWithDouble:0.2],@"duration",nil]
 					   forKey:kQSWindowExecEffect];
 	
-	[[self window] setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"hide",@"type",[NSNumber numberWithFloat:0.15],@"duration",nil]
+	[window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"hide",@"type",[NSNumber numberWithDouble:0.15],@"duration",nil]
 					   forKey:kQSWindowFadeEffect];
 	
-	[[self window] setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSVContractEffect",@"transformFn",@"hide",@"type",[NSNumber numberWithFloat:0.333],@"duration",nil,[NSNumber numberWithFloat:0.25],@"brightnessB",@"QSStandardBrightBlending",@"brightnessFn",nil]
+	[window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSVContractEffect",@"transformFn",@"hide",@"type",[NSNumber numberWithDouble:0.333],@"duration",nil,[NSNumber numberWithDouble:0.25],@"brightnessB",@"QSStandardBrightBlending",@"brightnessFn",nil]
 					   forKey:kQSWindowCancelEffect];
 	
 	
+	NSArray *searchObjectViews = [NSArray arrayWithObjects:dSelector,aSelector,iSelector, nil];
+	[(QSCollectingSearchObjectView *)dSelector setCollectionSpace:0.0f];
+	[(QSCollectingSearchObjectView *)iSelector setCollectionSpace:0.0f];
+	[(QSCollectingSearchObjectView *)dSelector setCollectionEdge:NSMinXEdge];
+	[(QSCollectingSearchObjectView *)iSelector setCollectionEdge:NSMinXEdge];
 	
-	[dSelector setCollectionSpace:0.0f];
-	[iSelector setCollectionSpace:0.0f];
-	[dSelector setCollectionEdge:NSMinXEdge];
-	[iSelector setCollectionEdge:NSMinXEdge];
-	
-	[[dSelector cell] setBezeled:YES];
-	[[aSelector cell] setBezeled:YES];
-	[[iSelector cell] setBezeled:YES];	
-	
-	[[dSelector cell] setShowDetails:NO];
-	[[aSelector cell] setShowDetails:NO];
-	[[iSelector cell] setShowDetails:NO];
-	
-	[[dSelector cell] setTextColor:[NSColor blackColor]];
-	[[aSelector cell] setTextColor:[NSColor blackColor]];
-	[[iSelector cell] setTextColor:[NSColor blackColor]];
-	
-	[[dSelector cell] setHighlightsBy:NSNoCellMask];
-	[[aSelector cell] setHighlightsBy:NSNoCellMask];
-	[[iSelector cell] setHighlightsBy:NSNoCellMask];
-	
-	//	NSLog(@"%d",[[dSelector cell]showsStateBy]);
+    for (QSSearchObjectView *theSelector in searchObjectViews) {
+        [[theSelector cell] setBezeled:YES];
+        [[theSelector cell] setShowDetails:NO];
+        [[theSelector cell] setTextColor:[NSColor blackColor]];
+        [[theSelector cell] setHighlightsBy:NSNoCellMask];
+        [theSelector setPreferredEdge:NSMinYEdge];
+        [theSelector setResultsPadding:5];
+    }
     
-    [[self window]setMovableByWindowBackground:NO];
-    [dSelector setPreferredEdge:NSMinYEdge];
-    [aSelector setPreferredEdge:NSMinYEdge];
-    [iSelector setPreferredEdge:NSMinYEdge];
-	
-    [dSelector setResultsPadding:5];
-    [aSelector setResultsPadding:5];
-    [iSelector setResultsPadding:5];
-    
+    [[self window] setMovableByWindowBackground:NO];
 	
     [self updateViewLocations];
 	[[self window] display];
@@ -87,9 +68,9 @@
     NSRect dFrame=[dSelector frame];
     NSRect aFrame=[aSelector frame];
     NSRect iFrame=[iSelector frame];
-    dFrame.size.width=MIN(256,(int)[dSelector cellSize].width);
-    aFrame.size.width=MIN(256,(int)[aSelector cellSize].width);
-    iFrame.size.width=MIN(256,(int)[iSelector cellSize].width);
+    dFrame.size.width=MIN(256,(NSInteger)[dSelector cellSize].width);
+    aFrame.size.width=MIN(256,(NSInteger)[aSelector cellSize].width);
+    iFrame.size.width=MIN(256,(NSInteger)[iSelector cellSize].width);
     aFrame.origin.x=NSMaxX(dFrame)-9;
     iFrame.origin.x=NSMaxX(aFrame)-9;
     [dSelector setFrame:dFrame];
@@ -111,9 +92,6 @@
     [super showInterface:sender];
 }
 
-
-
-
 - (NSSize)maxIconSize{
     return NSMakeSize(32,32);
 }
@@ -123,19 +101,4 @@
 	
 }
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
