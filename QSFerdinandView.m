@@ -7,8 +7,6 @@
 //
 
 #import "QSFerdinandView.h"
-#import <QSFoundation/QSFoundation.h>
-
 
 @implementation QSFerdinandView
 
@@ -23,21 +21,13 @@
 	}
 	return self;
 }
-- (void)getSystemColor{
+- (void)getSystemColor {
 	[background release];
 	   // Initialization code here.
-	if ([NSColor currentControlTint] == NSGraphiteControlTint) 
-		background=[QSResourceManager imageNamed:@"SpotlightGraphiteBackground"];
-	else
-		background=[QSResourceManager imageNamed:@"SpotlightBlueBackground"];
-	
-	if(!background)
-		background=[[NSBundle bundleForClass:[self class]]imageNamed:@"BarGradient"];
+	background=[[NSBundle bundleForClass:[self class]]imageNamed:@"BarGradient"];
 	[background retain];
 	
-	
 }
-
 
 - (void)drawRect:(NSRect)rect {
 	[background drawInRect:[self frame] fromRect:rectFromSize([background size]) operation:NSCompositeSourceOver fraction:1.0];
