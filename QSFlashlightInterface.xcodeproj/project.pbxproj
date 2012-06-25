@@ -25,7 +25,6 @@
 		14DE8A9410D09EA100851A6F /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		14DE8A9510D09EA100851A6F /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
 		14DE8A9610D09EA100851A6F /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Debug.xcconfig; sourceTree = "<group>"; };
-		14DE8A9710D09EA100851A6F /* QSPlugIn_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPlugIn_Prefix.pch; sourceTree = "<group>"; };
 		14DE8A9810D09EA100851A6F /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
 		14DE8A9910D09EA100851A6F /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
 		14DE8A9A10D09EA100851A6F /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -93,13 +92,13 @@
 				14DE8A9410D09EA100851A6F /* Debug.xcconfig */,
 				14DE8A9510D09EA100851A6F /* Developer.xcconfig */,
 				14DE8A9610D09EA100851A6F /* QSPlugIn_Debug.xcconfig */,
-				14DE8A9710D09EA100851A6F /* QSPlugIn_Prefix.pch */,
 				14DE8A9810D09EA100851A6F /* QSPlugIn_Release.xcconfig */,
 				14DE8A9910D09EA100851A6F /* QSPlugIn.xcconfig */,
 				14DE8A9A10D09EA100851A6F /* Release.xcconfig */,
 			);
-			path = Configuration;
-			sourceTree = QS_SOURCE_ROOT;
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
 		};
 		1ED78706FE9D4A0611CA0C5A /* Products */ = {
 			isa = PBXGroup;
@@ -239,7 +238,7 @@
 /* Begin XCBuildConfiguration section */
 		7F07B004085E433200E2AFC4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14DE8A9810D09EA100851A6F /* QSPlugIn_Release.xcconfig */;
+			baseConfigurationReference = 14DE8A9910D09EA100851A6F /* QSPlugIn.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-bundle";
 				PRODUCT_NAME = "Flashlight Interface";
@@ -262,7 +261,7 @@
 		};
 		CD6BF9061597A40A0087F1DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14DE8A9610D09EA100851A6F /* QSPlugIn_Debug.xcconfig */;
+			baseConfigurationReference = 14DE8A9910D09EA100851A6F /* QSPlugIn.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-bundle";
 				PRODUCT_NAME = "Flashlight Interface";

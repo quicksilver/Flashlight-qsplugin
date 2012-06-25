@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>Flashlight Inteface</string>
 	<key>CFBundleExecutable</key>
 	<string>Flashlight Interface</string>
 	<key>CFBundleIdentifier</key>
@@ -14,14 +16,12 @@
 	<string>Flashlight Interface</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
 	<key>CFBundleSignature</key>
 	<string>daed</string>
 	<key>CFBundleVersion</key>
-	<string>89</string>
-	<key>CFBundleDisplayName</key>
-	<string>Flashlight Inteface</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0.0</string>
+	<string>8A</string>
 	<key>NSPrincipalClass</key>
 	<string>QSFlashlightInterface</string>
 	<key>QSPlugIn</key>

@@ -75,7 +75,7 @@
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">4194304</int>
 								<string key="NSContents">Quicksilver</string>
-								<object class="NSFont" key="NSSupport" id="759845741">
+								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">12</double>
 									<int key="NSfFlags">16</int>
@@ -359,7 +359,6 @@ xPzFYMXExinGjcbyx1fHu8ggyIXI6slPybTKGcp/yuTLScuvzBTMeczfzUTNqs4PznXO289Az6bQDNBx
 							<string key="NSFrame">{{382, 6}, {128, 20}}</string>
 							<reference key="NSSuperview" ref="753834179"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSClassName">QSCollectingSearchObjectView</string>
 							<string key="NSExtension">NSImageView</string>
 						</object>
@@ -395,7 +394,11 @@ xPzFYMXExinGjcbyx1fHu8ggyIXI6slPybTKGcp/yuTLScuvzBTMeczfzUTNqs4PznXO289Az6bQDNBx
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">4194304</int>
 								<string key="NSContents">Quicksilver</string>
-								<reference key="NSSupport" ref="759845741"/>
+								<object class="NSFont" key="NSSupport">
+									<string key="NSName">LucidaGrande-Bold</string>
+									<double key="NSSize">12</double>
+									<int key="NSfFlags">16</int>
+								</object>
 								<reference key="NSControlView" ref="655576382"/>
 								<reference key="NSBackgroundColor" ref="774933510"/>
 								<reference key="NSTextColor" ref="774933510"/>
