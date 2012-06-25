@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>daed</string>
 	<key>CFBundleVersion</key>
-	<string>8A</string>
+	<string>8B</string>
 	<key>NSPrincipalClass</key>
 	<string>QSFlashlightInterface</string>
 	<key>QSPlugIn</key>
