@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>CFBundleSignature</key>
 	<string>daed</string>
 	<key>CFBundleVersion</key>
-	<string>8B</string>
+	<string>8D</string>
 	<key>NSPrincipalClass</key>
 	<string>QSFlashlightInterface</string>
 	<key>QSPlugIn</key>
@@ -47,12 +47,12 @@
 			<string>QSFlashlightInterface</string>
 		</dict>
 	</dict>
-    <key>QSResourceAdditions</key>
-    <dict>
-        <key>SpotlightBlueBackground</key>
-        <string>/System/Library/CoreServices/Search.bundle/Contents/Resources/MDSearchBar-1.tiff</string>
-        <key>SpotlightGraphiteBackground</key>
-        <string>/System/Library/CoreServices/Search.bundle/Contents/Resources/MDSearchBar-6.tiff</string>
-    </dict>
+	<key>QSResourceAdditions</key>
+	<dict>
+		<key>SpotlightBlueBackground</key>
+		<string>/System/Library/CoreServices/Search.bundle/Contents/Resources/MDSearchBar-1.tiff</string>
+		<key>SpotlightGraphiteBackground</key>
+		<string>/System/Library/CoreServices/Search.bundle/Contents/Resources/MDSearchBar-6.tiff</string>
+	</dict>
 </dict>
 </plist>
