@@ -24,9 +24,17 @@
 - (void)getSystemColor {
 	[background release];
 	   // Initialization code here.
-	background=[[NSBundle bundleForClass:[self class]]imageNamed:@"BarGradient"];
+    if ([NSColor currentControlTint] == NSGraphiteControlTint) {
+        background=[QSResourceManager imageNamed:@"SpotlightGraphiteBackground"];
+    } else {
+        background=[QSResourceManager imageNamed:@"SpotlightBlueBackground"];
+    }
+    
+    if(!background) {
+        background=[[NSBundle bundleForClass:[self class]]imageNamed:@"BarGradient"];
+    }
+    
 	[background retain];
-	
 }
 
 - (void)drawRect:(NSRect)rect {

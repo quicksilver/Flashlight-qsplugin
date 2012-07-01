@@ -47,5 +47,12 @@
 			<string>QSFlashlightInterface</string>
 		</dict>
 	</dict>
+    <key>QSResourceAdditions</key>
+    <dict>
+        <key>SpotlightBlueBackground</key>
+        <string>/System/Library/CoreServices/Search.bundle/Contents/Resources/MDSearchBar-1.tiff</string>
+        <key>SpotlightGraphiteBackground</key>
+        <string>/System/Library/CoreServices/Search.bundle/Contents/Resources/MDSearchBar-6.tiff</string>
+    </dict>
 </dict>
 </plist>
