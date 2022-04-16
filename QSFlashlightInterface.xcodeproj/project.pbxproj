@@ -36,7 +36,7 @@
 		8D1AC9740486D14A00FE50C9 /* Flashlight Interface.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flashlight Interface.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		E18F183F069CBA2200C1A2F7 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E18F183F069CBA2200C1A2F7 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E18F1841069CBA3D00C1A2F7 /* BarGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BarGradient.png; sourceTree = "<group>"; };
 		E18F1842069CBA3D00C1A2F7 /* Flashlight.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = Flashlight.nib; sourceTree = "<group>"; };
 		E18F1933069CBE5500C1A2F7 /* QSFerdinandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSFerdinandView.h; sourceTree = "<group>"; };
@@ -158,11 +158,19 @@
 /* Begin PBXProject section */
 		0259C573FE90428111CA0C5A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					8D1AC9600486D14A00FE50C9 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
 			buildConfigurationList = 7F07B006085E433200E2AFC4 /* Build configuration list for PBXProject "QSFlashlightInterface" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 0259C574FE90428111CA0C5A /* QSFlashlightInterface */;
