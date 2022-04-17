@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Flashlight Interface</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.blacktree.Quicksilver.QSFlashlightInterface</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.1</string>
+	<string>1.1.0</string>
 	<key>CFBundleSignature</key>
 	<string>daed</string>
 	<key>CFBundleVersion</key>
-	<string>8D</string>
+	<string>90</string>
 	<key>NSPrincipalClass</key>
 	<string>QSFlashlightInterface</string>
 	<key>QSPlugIn</key>
@@ -33,7 +33,7 @@
 			<string>Interfaces</string>
 		</array>
 		<key>description</key>
-		<string>Provides a Spotlight style interface.</string>
+		<string>Provides a mini Spotlight style interface.</string>
 		<key>icon</key>
 		<string>interface</string>
 		<key>qsversion</key>
@@ -46,13 +46,6 @@
 			<key>QSFlashlightInterface</key>
 			<string>QSFlashlightInterface</string>
 		</dict>
-	</dict>
-	<key>QSResourceAdditions</key>
-	<dict>
-		<key>SpotlightBlueBackground</key>
-		<string>/System/Library/CoreServices/Search.bundle/Contents/Resources/MDSearchBar-1.tiff</string>
-		<key>SpotlightGraphiteBackground</key>
-		<string>/System/Library/CoreServices/Search.bundle/Contents/Resources/MDSearchBar-6.tiff</string>
 	</dict>
 </dict>
 </plist>

@@ -23,22 +23,15 @@
 }
 - (void)getSystemColor {
 	[background release];
-	   // Initialization code here.
-    if ([NSColor currentControlTint] == NSGraphiteControlTint) {
-        background=[QSResourceManager imageNamed:@"SpotlightGraphiteBackground"];
-    } else {
-        background=[QSResourceManager imageNamed:@"SpotlightBlueBackground"];
-    }
+	// Initialization code here.
     
-    if(!background) {
-        background=[[NSBundle bundleForClass:[self class]]imageNamed:@"BarGradient"];
-    }
+	background=[[NSBundle bundleForClass:[self class]] imageNamed:@"BarGradient"];
     
 	[background retain];
 }
 
 - (void)drawRect:(NSRect)rect {
-	[background drawInRect:[self frame] fromRect:rectFromSize([background size]) operation:NSCompositeSourceOver fraction:1.0];
+	[background drawInRect:[self frame] fromRect:rectFromSize([background size]) operation:NSCompositingOperationSourceOver fraction:1.0];
 	
 }
 

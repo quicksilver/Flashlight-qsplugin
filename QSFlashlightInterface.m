@@ -27,7 +27,7 @@
 	[menuButton setAlternateImage:[[NSBundle mainBundle] imageNamed:@"QuicksilverMenuPressed"]];
 
 	QSWindow *window = (QSWindow *)[self window];
-    
+	[window setFrameAutosaveName:@"FlashlightInterfaceWindow"];
 	[window setShowEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSVExpandEffect",@"transformFn",@"show",@"type",[NSNumber numberWithDouble:0.15],@"duration",nil]];
 	//	[window setHideEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSShrinkEffect",@"transformFn",@"hide",@"type",[NSNumber numberWithDouble:.25],@"duration",nil]];
 	
@@ -50,7 +50,7 @@
     for (QSSearchObjectView *theSelector in searchObjectViews) {
         [[theSelector cell] setBezeled:YES];
         [[theSelector cell] setShowDetails:NO];
-        [[theSelector cell] setTextColor:[NSColor blackColor]];
+        [[theSelector cell] setTextColor:[NSColor textColor]];
         [[theSelector cell] setHighlightsBy:NSNoCellMask];
         [theSelector setPreferredEdge:NSMinYEdge];
         [theSelector setResultsPadding:5];
@@ -88,7 +88,8 @@
 
 -(void) showInterface:(id)sender{
 	NSScreen *screen=[NSScreen mainScreen];
-	[[self window]setFrameTopLeftPoint:NSMakePoint(NSMinX([screen frame]),NSMaxY([screen visibleFrame]))];   
+	NSRect interfaceRect = [(NSWindow *)[sender window] frame];
+	[[self window] setFrameTopLeftPoint:NSMakePoint(NSMaxX([screen frame])/2 - NSWidth(interfaceRect)/2, NSMaxY([screen visibleFrame])*0.9)];
     [super showInterface:sender];
 }
 

@@ -12,9 +12,9 @@
 		7F095FCF0830712F009C3703 /* QSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F095FCB0830712F009C3703 /* QSFoundation.framework */; };
 		7F095FD00830712F009C3703 /* QSInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F095FCC0830712F009C3703 /* QSInterface.framework */; };
 		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		CD32FD2C280C0A6000653DD3 /* Flashlight.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD32FD2B280C0A6000653DD3 /* Flashlight.xib */; };
 		E18F1840069CBA2200C1A2F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E18F183E069CBA2200C1A2F7 /* Localizable.strings */; };
 		E18F1843069CBA3D00C1A2F7 /* BarGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = E18F1841069CBA3D00C1A2F7 /* BarGradient.png */; };
-		E18F1844069CBA3D00C1A2F7 /* Flashlight.nib in Resources */ = {isa = PBXBuildFile; fileRef = E18F1842069CBA3D00C1A2F7 /* Flashlight.nib */; };
 		E18F1935069CBE5500C1A2F7 /* QSFerdinandView.h in Resources */ = {isa = PBXBuildFile; fileRef = E18F1933069CBE5500C1A2F7 /* QSFerdinandView.h */; };
 		E18F1936069CBE5500C1A2F7 /* QSFerdinandView.m in Sources */ = {isa = PBXBuildFile; fileRef = E18F1934069CBE5500C1A2F7 /* QSFerdinandView.m */; };
 		E1EAB046068128A200774DFF /* QSFlashlightInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB045068128A200774DFF /* QSFlashlightInterface.m */; };
@@ -34,11 +34,11 @@
 		7F095FCC0830712F009C3703 /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* Flashlight Interface.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flashlight Interface.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD32FD29280C07E900653DD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD32FD2A280C07E900653DD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CD32FD2B280C0A6000653DD3 /* Flashlight.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Flashlight.xib; sourceTree = "<group>"; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		E18F183F069CBA2200C1A2F7 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E18F1841069CBA3D00C1A2F7 /* BarGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BarGradient.png; sourceTree = "<group>"; };
-		E18F1842069CBA3D00C1A2F7 /* Flashlight.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = Flashlight.nib; sourceTree = "<group>"; };
 		E18F1933069CBE5500C1A2F7 /* QSFerdinandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSFerdinandView.h; sourceTree = "<group>"; };
 		E18F1934069CBE5500C1A2F7 /* QSFerdinandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSFerdinandView.m; sourceTree = "<group>"; };
 		E1EAB045068128A200774DFF /* QSFlashlightInterface.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSFlashlightInterface.m; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				E18F1841069CBA3D00C1A2F7 /* BarGradient.png */,
-				E18F1842069CBA3D00C1A2F7 /* Flashlight.nib */,
+				CD32FD2B280C0A6000653DD3 /* Flashlight.xib */,
 				E18F183E069CBA2200C1A2F7 /* Localizable.strings */,
 				8D1AC9730486D14A00FE50C9 /* Info.plist */,
 				8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */,
@@ -159,6 +159,7 @@
 		0259C573FE90428111CA0C5A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 1120;
 				TargetAttributes = {
 					8D1AC9600486D14A00FE50C9 = {
 						ProvisioningStyle = Manual;
@@ -167,11 +168,11 @@
 			};
 			buildConfigurationList = 7F07B006085E433200E2AFC4 /* Build configuration list for PBXProject "QSFlashlightInterface" */;
 			compatibilityVersion = "Xcode 2.4";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 0259C574FE90428111CA0C5A /* QSFlashlightInterface */;
 			projectDirPath = "";
@@ -189,7 +190,7 @@
 			files = (
 				E18F1840069CBA2200C1A2F7 /* Localizable.strings in Resources */,
 				E18F1843069CBA3D00C1A2F7 /* BarGradient.png in Resources */,
-				E18F1844069CBA3D00C1A2F7 /* Flashlight.nib in Resources */,
+				CD32FD2C280C0A6000653DD3 /* Flashlight.xib in Resources */,
 				E18F1935069CBE5500C1A2F7 /* QSFerdinandView.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,7 +229,7 @@
 		8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8D1AC97B0486D23100FE50C9 /* English */,
+				CD32FD29280C07E900653DD3 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -236,7 +237,7 @@
 		E18F183E069CBA2200C1A2F7 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E18F183F069CBA2200C1A2F7 /* English */,
+				CD32FD2A280C07E900653DD3 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -248,7 +249,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14DE8A9910D09EA100851A6F /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				OTHER_LDFLAGS = "-bundle";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blacktree.Quicksilver.QSFlashlightInterface;
 				PRODUCT_NAME = "Flashlight Interface";
 			};
 			name = Release;
@@ -257,6 +260,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14DE8A9A10D09EA100851A6F /* Release.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 			};
 			name = Release;
 		};
@@ -264,6 +281,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14DE8A9410D09EA100851A6F /* Debug.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 			};
 			name = Debug;
 		};
@@ -271,7 +303,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14DE8A9910D09EA100851A6F /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				OTHER_LDFLAGS = "-bundle";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blacktree.Quicksilver.QSFlashlightInterface;
 				PRODUCT_NAME = "Flashlight Interface";
 			};
 			name = Debug;
