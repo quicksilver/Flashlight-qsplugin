@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="QSWindowInterfaceController">
+        <customObject id="-2" userLabel="File's Owner" customClass="QSFlashlightInterface">
             <connections>
                 <outlet property="aSelector" destination="69" id="210"/>
                 <outlet property="dSelector" destination="68" id="209"/>
