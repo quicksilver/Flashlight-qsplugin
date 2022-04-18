@@ -125,8 +125,8 @@
 			children = (
 				E18F1933069CBE5500C1A2F7 /* QSFerdinandView.h */,
 				E18F1934069CBE5500C1A2F7 /* QSFerdinandView.m */,
-				E1EAB045068128A200774DFF /* QSFlashlightInterface.m */,
 				E1EAB047068128A800774DFF /* QSFlashlightInterface.h */,
+				E1EAB045068128A200774DFF /* QSFlashlightInterface.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

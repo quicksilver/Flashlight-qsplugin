@@ -21,6 +21,7 @@
 
 - (void)windowDidLoad{
     [super windowDidLoad];
+	interfaceRect = NSZeroRect;
     [menuButton setMenuOffset:NSMakePoint(0.0,1.0)];
 	[[self window]setLevel:kCGMainMenuWindowLevel-1];
     [menuButton setImage:[[NSBundle mainBundle] imageNamed:@"QuicksilverMenuLight"]];
@@ -88,7 +89,9 @@
 
 -(void) showInterface:(id)sender{
 	NSScreen *screen=[NSScreen mainScreen];
-	NSRect interfaceRect = [(NSWindow *)[sender window] frame];
+	if (NSIsEmptyRect(interfaceRect)) {
+		interfaceRect = [(NSWindow *)[sender window] frame];
+	}
 	[[self window] setFrameTopLeftPoint:NSMakePoint(NSMaxX([screen frame])/2 - NSWidth(interfaceRect)/2, NSMaxY([screen visibleFrame])*0.9)];
     [super showInterface:sender];
 }

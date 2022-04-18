@@ -12,5 +12,6 @@
 
 @interface QSFlashlightInterface : QSInterfaceController
 {
+	NSRect interfaceRect;
 }
 @end
