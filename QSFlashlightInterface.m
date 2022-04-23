@@ -89,10 +89,12 @@
 
 -(void) showInterface:(id)sender{
 	NSScreen *screen=[NSScreen mainScreen];
-	if (NSIsEmptyRect(interfaceRect)) {
-		interfaceRect = [(NSWindow *)[sender window] frame];
-	}
-	[[self window] setFrameTopLeftPoint:NSMakePoint(NSMaxX([screen frame])/2 - NSWidth(interfaceRect)/2, NSMaxY([screen visibleFrame])*0.9)];
+	// TODO: Make interface moveable, or add an option to put it in the center of the screen or top right
+	//if (NSIsEmptyRect(interfaceRect)) {
+	//	interfaceRect = [(NSWindow *)[sender window] frame];
+	//}
+	//[[self window] setFrameTopLeftPoint:NSMakePoint(NSMaxX([screen frame])/2 - NSWidth(interfaceRect)/2, NSMaxY([screen visibleFrame])*0.9)];
+	[[self window]setFrameTopLeftPoint:NSMakePoint(NSMinX([screen frame]),NSMaxY([screen visibleFrame]))];
     [super showInterface:sender];
 }
 
